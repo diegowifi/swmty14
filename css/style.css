@@ -1,0 +1,475 @@
+@font-face {
+    font-family: Sanchez;
+    src: url(../fonts/Sanchez.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #585858;
+    overflow-x: hidden;
+}
+
+.action {
+    height: 100%;
+    width: 100%;
+    padding: 40px 0 40px 0;
+    position: relative;
+    background: url(../img/sw.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.action p {
+    color: white;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.action img {
+    width: 100%;
+}
+
+.intro {
+    height: 580px;
+}
+
+.intro div {
+    position: relative;
+    top: 25%;
+}
+
+.action h1 {
+    color: #12edde;
+    font-size: 64px;
+    font-family: Sanchez;
+}
+
+.intro a {
+    color: #000;
+    background-color: #12edde;
+    padding: 20px 40px;
+    text-decoration: none;
+    width: 300px;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro a:hover {
+    background-color: #2fb5a9;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Sanchez, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #12edde;
+    text-decoration: none;
+}
+
+
+/*Agenda*/
+
+.agenda {
+    height: auto;
+    width: 100%;
+    background-color: #2fb5a9;
+    padding: 60px 0 100px 0;
+}
+
+.agenda h2 {
+    color: #FFF;
+    font-size: 72px;
+    font-family: Sanchez;
+    padding-left: 16px;
+    margin-bottom: 0;
+}
+
+.agenda h3 {
+    color: #383838;
+    font-size: 30px;
+    padding-left: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+}
+
+table {
+    background-color: white;
+    margin-top: 40px;
+}
+
+th:first-child {
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    background-color: #2fb5a9;
+}
+
+th {
+    color: #000;
+    font-size: 22px;
+}
+
+tr td:first-child {
+    text-align: center;
+}
+
+/*Mentores*/
+
+.mentores {
+    height: auto;
+    width: 100%;
+    background-color: #FFF;
+    padding: 60px 0 100px 0;
+}
+
+.mentor:hover {
+    background-color: #383838;
+    color: #FFF;
+}
+
+.mentor img {
+    height: 140px;
+    width: 140px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border: solid 5px #2fb5a9;
+}
+
+.mentores h2 {
+    color: #000;
+    font-size: 72px;
+    font-family: Sanchez;
+    margin-bottom: 0;
+}
+
+.mentores h3 {
+    color: #383838;
+    font-size: 30px;
+    margin: 0 0 50px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mentor h4 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+/*Jueces*/
+
+.jueces {
+    height: auto;
+    width: 100%;
+    background-color: #2b2a2a;
+    padding: 60px 0 120px 0;
+}
+
+.jueces h2 {
+    color: #12edde;
+    font-size: 72px;
+    font-family: Sanchez;
+    margin-bottom: 0;
+}
+
+.jueces h3 {
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    margin: 0 0 50px 0;
+}
+
+.juez h4 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Sanchez, sans-serif;
+}
+
+.juez {
+    color: #FFF;
+    width: 27.5%;
+}
+
+.juez:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.juez img {
+    height: 140px;
+    width: 140px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border: solid 5px #12edde;
+}
+
+/*Lugar*/
+
+.lugar {
+    height: auto;
+    width: 100%;
+    background-color: #2fb5a9;
+    padding: 100px 0 100px 0;
+}
+
+.lugar h2 {
+    color: #FFF;
+    font-size: 84px;
+    font-family: Sanchez;
+    margin-bottom: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+.lugar h3 {
+    color: #3f3f3f;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.lugar h4 {
+    color: #000;
+    font-size: 44px;
+    font-family: Sanchez;
+    font-weight: 100;
+}
+
+.lugar h5 {
+    color: #3f3f3f;
+    font-size: 30px;
+    font-family: Sanchez;
+    font-weight: 100;
+}
+
+.lugar .col-md-3 {
+    margin-top: 40px;
+}
+
+
+
+/*Tickets*/
+
+.tickets {
+    background-color: #FFF;
+    width: 100%;
+    height: auto;
+    padding: 60px 0 100px 0;
+}
+
+.tickets h2 {
+    color: #000;
+    font-size: 72px;
+    font-family: Sanchez;
+    margin-bottom: 0;
+}
+
+.tickets h3 {
+    color: #383838;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 50px 0;
+}
+
+.tickets .row .col-md-3 {
+    height: auto;
+    border: solid 2px #cecece;
+    width: 27.5%;
+}
+
+.tickets i {
+    color: #2fb5a9;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 50px;
+}
+
+.tickets h4 {
+    color: #000;
+    font-size: 34px;
+    font-family: Sanchez;
+    text-align: center;
+}
+
+.tickets p {
+    padding-top: 20px;
+}
+
+.tickets a {
+    display: inline-block;
+    background-color: #2fb5a9;
+    color: #FFF;
+    padding: 20px 40px;
+    margin-left: 27%;
+    font-size: 30px;
+    font-family: Sanchez;
+    text-transform: uppercase;
+    text-align: center;
+    width: 45.5%;
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+.tickets a:hover {
+    background-color: #383838;
+}
+
+/*Sponsors*/
+.patrocinadores {
+    height: auto;
+    width: 100%;
+    background-color: #2b2a2a;
+    padding: 60px 0 120px 0;
+}
+
+.patrocinadores h2 {
+    color: #12edde;
+    font-size: 72px;
+    font-family: Sanchez, sans-serif;
+    margin-bottom: 0;
+}
+
+.patrocinadores h3 {
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    margin: 0 0 50px 0;
+}
+
+.patrocinadores img {
+    width: 100%;
+}
+
+.patrocinadores .col-md-2 {
+    padding-top: 40px;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    background-color: #2fb5a9;
+    padding: 20px 0 20px 0;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 997px) {
+ 
+	
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 60px;
+    }
+
+    .action {
+        padding-bottom: 0;
+    }
+
+    .intro div {
+        top: 0;
+    }
+
+    .action img {
+        width: 70%;
+        margin: 50px auto;
+    }
+
+    .mentor {
+        padding: 20px;
+    }
+
+    .juez {
+        width: 100%;
+        padding: 5px 20px 20px 20px;
+    }
+
+    .tickets .row .col-md-3 {
+        width: 96%;
+        margin: 2%;
+    }
+
+    .tickets a {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .patrocinadores .col-md-2 {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+@media (max-width: 685px) {
+ 
+	
+    .action img {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    nav ul {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+
+    nav ul li a {
+    }
+
+    .patrocinadores h2 {
+        font-size: 42px;
+    }
+
+    .patrocinadores h3 {
+        font-size: 22px;
+    }
+}
