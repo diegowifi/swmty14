@@ -3,6 +3,11 @@
     src: url(../fonts/Sanchez.otf);
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -59,8 +64,8 @@ body {
     display: block;
     margin: 40px auto;
     text-align: center;
-    font-size: 22px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-family: Roboto;
 }
 
 .intro a:hover {
@@ -87,7 +92,7 @@ nav ul li a {
     padding: 20px;
     text-decoration: none;
     color: #FFF;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Sanchez, sans-serif;
 }
 
@@ -118,7 +123,7 @@ nav ul li a:hover {
     color: #383838;
     font-size: 30px;
     padding-left: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-top: 0;
 }
 
@@ -165,7 +170,22 @@ tr td:first-child {
     margin-left: auto;
     margin-top: 20px;
     border: solid 5px #2fb5a9;
+
+    -webkit-transition:all 300ms linear; 
+-moz-transition:all 300ms linear; 
+-o-transition:all 300ms linear; 
+-ms-transition:all 300ms linear; 
+transition:all 300ms linear; 
 }
+
+.mentor:hover img{
+          -moz-transform: scale(1.1); 
+		  -webkit-transform: scale(1.1); 
+		  -o-transform: scale(1.1); 
+		  transform: scale(1.1);
+
+ }
+
 
 .mentores h2 {
     color: #000;
@@ -178,15 +198,19 @@ tr td:first-child {
     color: #383838;
     font-size: 30px;
     margin: 0 0 50px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Roboto", sans-serif;
+    
 }
 
 .mentor h4 {
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     font-weight: bold;
     padding: 10px 0 10px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
 }
+
 
 /*Jueces*/
 
@@ -207,7 +231,7 @@ tr td:first-child {
 .jueces h3 {
     color: #FFF;
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    
     font-weight: 100;
     margin: 0 0 50px 0;
 }
@@ -216,7 +240,8 @@ tr td:first-child {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-    font-family: Sanchez, sans-serif;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 0 10px 0;
 }
 
 .juez {
@@ -237,6 +262,20 @@ tr td:first-child {
     margin-left: auto;
     margin-top: 20px;
     border: solid 5px #12edde;
+
+    -webkit-transition:all 300ms linear; 
+-moz-transition:all 300ms linear; 
+-o-transition:all 300ms linear; 
+-ms-transition:all 300ms linear; 
+transition:all 300ms linear; 
+}
+
+.juez:hover img{
+	border: solid 5px #383838;
+	-moz-transform: scale(1.1); 
+		  -webkit-transform: scale(1.1); 
+		  -o-transform: scale(1.1); 
+		  transform: scale(1.1);
 }
 
 /*Lugar*/
@@ -260,7 +299,7 @@ tr td:first-child {
 .lugar h3 {
     color: #3f3f3f;
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-top: 0;
     margin-bottom: 60px;
 }
@@ -275,7 +314,7 @@ tr td:first-child {
 .lugar h5 {
     color: #3f3f3f;
     font-size: 30px;
-    font-family: Sanchez;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
 }
 
@@ -304,7 +343,7 @@ tr td:first-child {
 .tickets h3 {
     color: #383838;
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0 0 50px 0;
 }
 
@@ -371,7 +410,7 @@ tr td:first-child {
 .patrocinadores h3 {
     color: #FFF;
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     margin: 0 0 50px 0;
 }
@@ -394,8 +433,12 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 997px) {
+@media (max-width: 980px) {
  
+ nav ul{
+ 	float: none;
+ 	margin: 0 auto;
+ }
 	
     .logo {
         display: block;
