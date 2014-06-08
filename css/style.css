@@ -203,14 +203,17 @@ transition:all 300ms linear;
 }
 
 .mentor h4 {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
-    padding: 10px 0 10px 0;
+    padding: 15px 0 10px 0;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
 
+.mentor a{
+	color: #2fb5a9;
+}
 
 /*Jueces*/
 
@@ -224,7 +227,7 @@ transition:all 300ms linear;
 .jueces h2 {
     color: #12edde;
     font-size: 72px;
-    font-family: Sanchez;
+    font-family: "Sanchez", sans-serif;
     margin-bottom: 0;
 }
 
@@ -278,6 +281,10 @@ transition:all 300ms linear;
 		  transform: scale(1.1);
 }
 
+.juez a{
+	color: #2fb5a9;
+}
+
 /*Lugar*/
 
 .lugar {
@@ -299,15 +306,15 @@ transition:all 300ms linear;
 .lugar h3 {
     color: #3f3f3f;
     font-size: 30px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Sanchez", sans-serif;
     margin-top: 0;
     margin-bottom: 60px;
 }
 
 .lugar h4 {
-    color: #000;
+    color: #181818;
     font-size: 44px;
-    font-family: Sanchez;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
 }
 
