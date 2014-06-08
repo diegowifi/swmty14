@@ -433,22 +433,23 @@ transition:all 300ms linear;
 footer {
     height: auto;
     width: 100%;
-    background-color: #2fb5a9;
+    background-color: #181818;
     padding: 20px 0 20px 0;
-    color: #0a1e1b;
+    color: #FFF;
     font-size: 16px;
+    font-weight: 400;
     text-align: center;
     font-family: "Roboto", sans-serif;
 }
 
 footer a{
 	text-decoration: none;
-	color: #0a1e1b;
+	color: #FFF;
 }
 
 footer a:hover{
 	text-decoration: none;
-	color: #0a1e1b;
+	color: #FFF;
 }
 
 
