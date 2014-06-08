@@ -435,7 +435,7 @@ footer {
     width: 100%;
     background-color: #2fb5a9;
     padding: 20px 0 20px 0;
-    color: #FFF;
+    color: #0a1e1b;
     font-size: 16px;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -443,12 +443,12 @@ footer {
 
 footer a{
 	text-decoration: none;
-	color: #FFF;
+	color: #0a1e1b;
 }
 
 footer a:hover{
 	text-decoration: none;
-	color: #FFF;
+	color: #0a1e1b;
 }
 
 
