@@ -399,6 +399,14 @@ footer a:hover {
 }
 
 @media (max-width: 685px) {
+
+    .agenda h2, .mentores h2, .jueces h2, .lugar h2, .tickets h2, .patrocinadores h2{
+        font-size:44px;
+    }
+
+    .agenda h3, .mentores h3, .jueces h3, .lugar h3, .tickets h3, .patrocinadores h3 {
+        font-size:26px;
+    }
  
     .intro{margin-bottom: 100px;}
     
