@@ -32,84 +32,6 @@ body {
     overflow-x: hidden;
 }
 
-/*Background img*/
-.action {
-    background: url(../img/sw.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    padding: 40px 0 40px 0;
-    position: relative;
-    width: 100%;
-}
-
-.action h1 {
-    color: #12edde;
-    font: 64px "Sanchez", sans-serif;
-} 
-
-.action p {
-    color: white;
-    font-size: 16px;
-    vertical-align: middle;
-}
-
-.action img {width: 100%;}
-
-/*Intro message with button*/
-
-.intro {height: 580px;}
-
-.intro div {
-    position: relative;
-    top: 25%;
-}
-
-.intro a {
-    background-color: #12edde;
-    color: #000;
-    display: block;
-    font: 26px "Roboto", sans-serif;
-    margin: 40px auto;
-    padding: 20px 40px;
-    text-align: center;
-    text-decoration: none;
-    width: 400px;
-}
-
-.intro a:hover {background-color: #2fb5a9;}
-
-nav {
-    height: auto;
-    margin-bottom: 50px;
-    width: 100%;
-    z-index: 1;
-}
-
-nav ul {
-    float: right;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-}
-
-nav ul li a {
-    color: #FFF;
-    font: 18px "Sanchez", sans-serif;
-    padding: 20px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #12edde;
-    text-decoration: none;
-}
-
-
 /*Base code for sections*/
 
 .agenda, .mentores, .jueces, .lugar, .tickets, .patrocinadores {
@@ -162,6 +84,90 @@ nav ul li a:hover {
     text-align: center;
     padding: 15px 0 10px 0;
 }
+
+.agenda .row, .mentores .row, .jueces .row, .lugar .row, .tickets .row, .patrocinadores .row{
+    margin-top: 50px;
+}
+
+/*Background img*/
+
+.action {
+    background: url(../img/sw.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    padding: 40px 0 40px 0;
+    position: relative;
+    width: 100%;
+}
+
+.action h1 {
+    color: #12edde;
+    font: 64px "Sanchez", sans-serif;
+} 
+
+.action p {
+    color: white;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.action img {width: 100%;}
+
+/*Intro message with button*/
+
+.intro {height: 580px;}
+
+.intro div {
+    position: relative;
+    top: 25%;
+}
+
+.intro a {
+    background-color: #12edde;
+    color: #000;
+    display: block;
+    font: 26px "Roboto", sans-serif;
+    margin: 40px auto;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 60%;
+}
+
+.intro a:hover {background-color: #2fb5a9;}
+
+nav {
+    height: auto;
+    margin-bottom: 50px;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #FFF;
+    font: 18px "Sanchez", sans-serif;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #12edde;
+    text-decoration: none;
+}
+
+
 
 /*Agenda*/
 
@@ -285,12 +291,11 @@ tr td:first-child {
     display: inline-block;
     font: 30px "Sanchez",sans-serif;
     padding: 20px 40px;
-    margin-left: 27%;
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    width: 45.5%;
+    width: 100%;
 }
 
 .tickets a:hover {background-color: #383838;}
@@ -395,6 +400,9 @@ footer a:hover {
 
 @media (max-width: 685px) {
  
+    .intro a{
+        width: 100%;
+    }
     
     .action img {
         margin: 50px auto;
