@@ -32,65 +32,59 @@ body {
     overflow-x: hidden;
 }
 
-/*Background image*/
+/*Background img*/
 .action {
-    height: 100%;
-    width: 100%;
-    padding: 40px 0 40px 0;
-    position: relative;
     background: url(../img/sw.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-.action p {
-    color: white;
-    vertical-align: middle;
-    font-size: 16px;
-}
-
-.action img {
+    height: 100%;
+    padding: 40px 0 40px 0;
+    position: relative;
     width: 100%;
 }
 
-.intro {
-    height: 580px;
+.action h1 {
+    color: #12edde;
+    font: 64px "Sanchez", sans-serif;
+} 
+
+.action p {
+    color: white;
+    font-size: 16px;
+    vertical-align: middle;
 }
+
+.action img {width: 100%;}
+
+/*Intro message with button*/
+
+.intro {height: 580px;}
 
 .intro div {
     position: relative;
     top: 25%;
 }
 
-.action h1 {
-    color: #12edde;
-    font-size: 64px;
-    font-family: "Sanchez", sans-serif;
-}
-
 .intro a {
-    color: #000;
     background-color: #12edde;
+    color: #000;
+    display: block;
+    font: 26px "Roboto", sans-serif;
+    margin: 40px auto;
     padding: 20px 40px;
+    text-align: center;
     text-decoration: none;
     width: 400px;
-    display: block;
-    margin: 40px auto;
-    text-align: center;
-    font-size: 26px;
-    font-family: "Roboto", sans-serif;
 }
 
-.intro a:hover {
-    background-color: #2fb5a9;
-}
+.intro a:hover {background-color: #2fb5a9;}
 
 nav {
-    width: 100%;
     height: auto;
     margin-bottom: 50px;
+    width: 100%;
     z-index: 1;
 }
 
@@ -99,16 +93,15 @@ nav ul {
 }
 
 nav ul li {
-    list-style: none;
     display: inline-block;
+    list-style: none;
 }
 
 nav ul li a {
+    color: #FFF;
+    font: 18px "Sanchez", sans-serif;
     padding: 20px;
     text-decoration: none;
-    color: #FFF;
-    font-size: 18px;
-    font-family: "Sanchez", sans-serif;
 }
 
 nav ul li a:hover {
@@ -117,33 +110,66 @@ nav ul li a:hover {
 }
 
 
-/*Agenda*/
+/*Base code for sections*/
 
 .agenda, .mentores, .jueces, .lugar, .tickets, .patrocinadores {
     height: auto;
-    width: 100%;
     padding: 60px 0 100px 0;
+    width: 100%;
 }
 
-.agenda{
-    background-color: #2fb5a9;
-}
-
-.agenda h2 {
-    color: #FFF;
-    font-size: 72px;
-    font-family: "Sanchez", sans-serif;
-    padding-left: 16px;
+.agenda h2, .mentores h2, .jueces h2, .lugar h2, .tickets h2, .patrocinadores h2{
+    font:72px "Sanchez", sans-serif;
     margin-bottom: 0;
 }
 
-.agenda h3 {
-    color: #383838;
-    font-size: 30px;
-    padding-left: 16px;
-    font-family: "Sanchez", sans-serif;
+.agenda h3, .mentores h3, .jueces h3, .lugar h3, .tickets h3, .patrocinadores h3 {
+    font:30px "Sanchez", sans-serif;
     margin-top: 0;
 }
+
+.mentor img, .juez img {
+    display: block;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    filter: grayscale(50%);
+    height: 140px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+    width: 140px;
+}
+
+
+.mentor:hover img, .juez:hover img {
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.mentor h4, .juez h4 {
+    font:20px bold "Roboto", sans-serif;
+    text-align: center;
+    padding: 15px 0 10px 0;
+}
+
+/*Agenda*/
+
+.agenda{background-color: #2fb5a9;}
+
+.agenda h2 {color: #FFF;}
+
+.agenda h3{color: #383838;}
 
 table {
     background-color: white;
@@ -151,10 +177,10 @@ table {
 }
 
 th:first-child {
+    background-color: #2fb5a9;
     color: #FFF;
     font-size: 14px;
     text-align: center;
-    background-color: #2fb5a9;
 }
 
 th {
@@ -168,215 +194,71 @@ tr td:first-child {
 
 /*Mentores*/
 
-.mentores {
-    background-color: #FFF;
-}
+.mentores {background-color: #FFF;}
 
 .mentor:hover {
     background-color: #383838;
     color: #FFF;
 }
 
-.mentor img {
-    height: 140px;
-    width: 140px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    border: solid 5px #2fb5a9;
-    
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    filter: grayscale(50%);
+.mentor img{border: solid 5px #2fb5a9;}
 
-    -webkit-transition: all 300ms linear;
-    -moz-transition: all 300ms linear;
-    -o-transition: all 300ms linear;
-    -ms-transition: all 300ms linear;
-    transition: all 300ms linear;
-}
+.mentores h2 {color: #000;}
 
-.mentor:hover img {
-    -moz-transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    transform: scale(1.03);
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
+.mentores h3 {color: #383838;}
 
-.mentores h2 {
-    color: #000;
-    font-size: 72px;
-    font-family: "Sanchez",sans-serif;
-    margin-bottom: 0;
-}
-
-.mentores h3 {
-    color: #383838;
-    font-size: 30px;
-    margin: 0 0 50px 0;
-    font-family: "Sanchez", sans-serif;
-}
-
-.mentor h4 {
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    padding: 15px 0 10px 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-}
-
-.mentor a {
-    color: #2fb5a9;
-}
+.mentor a {color: #2fb5a9;}
 
 /*Jueces*/
-
-.jueces {
-    background-color: #2b2a2a;
-}
-
-.jueces h2 {
-    color: #12edde;
-    font-size: 72px;
-    font-family: "Sanchez", sans-serif;
-    margin-bottom: 0;
-}
-
-.jueces h3 {
-    color: #FFF;
-    font-size: 30px;
-    font-family: "Sanchez", sans-serif;
-    font-weight: 100;
-    margin: 0 0 50px 0;
-}
-
-.juez h4 {
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    padding: 10px 0 10px 0;
-}
 
 .juez {
     color: #FFF;
     width: 27.5%;
 }
 
+.jueces {background-color: #2b2a2a;}
+
+.jueces h2 {color: #12edde;}
+
+.jueces h3 {color: #FFF;}
+
 .juez:hover {
     background-color: #FFF;
     color: #000;
 }
 
-.juez img {
-    height: 140px;
-    width: 140px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    border: solid 5px #12edde;
+.juez img {border: solid 5px #12edde;}
 
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    filter: grayscale(50%);
+.juez:hover img {border: solid 5px #383838;}
 
-    -webkit-transition: all 300ms linear;
-    -moz-transition: all 300ms linear;
-    -o-transition: all 300ms linear;
-    -ms-transition: all 300ms linear;
-    transition: all 300ms linear;
-}
-
-.juez:hover img {
-    border: solid 5px #383838;
-    
-    -moz-transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    transform: scale(1.03);
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
-
-.juez a {
-    color: #2fb5a9;
-}
+.juez a {color: #2fb5a9;}
 
 /*Lugar*/
 
-.lugar {
-    background-color: #2fb5a9;
-}
+.lugar {background-color: #2fb5a9;}
 
-.lugar h2 {
-    color: #FFF;
-    font-size: 84px;
-    font-family: "Sanchez",sans-serif;
-    margin-bottom: 0;
-    top: 0;
-    margin-top: -40px;
-}
+.lugar h2 {color: #FFF;}
 
-.lugar h3 {
-    color: #3f3f3f;
-    font-size: 30px;
-    font-family: "Sanchez", sans-serif;
-    margin-top: 0;
-    margin-bottom: 60px;
-}
+.lugar h3 {color: #3f3f3f;}
 
 .lugar h4 {
     color: #181818;
-    font-size: 44px;
-    font-family: "Roboto", sans-serif;
+    font: 44px "Roboto", sans-serif;
     font-weight: 100;
+    padding-top: 60px;
 }
-
-.lugar h5 {
-    color: #3f3f3f;
-    font-size: 30px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-}
-
-.lugar .col-md-3 {
-    margin-top: 40px;
-}
-
-
 
 /*Tickets*/
 
-.tickets {
-    background-color: #FFF;
-}
+.tickets {background-color: #FFF;}
 
-.tickets h2 {
-    color: #000;
-    font-size: 72px;
-    font-family: "Sanchez", sans-serif;
-    margin-bottom: 0;
-}
+.tickets h2 {color: #000;}
 
-.tickets h3 {
-    color: #383838;
-    font-size: 30px;
-    font-family: "Sanchez", sans-serif;
-    margin: 0 0 50px 0;
-}
+.tickets h3 {color: #383838;}
 
 .tickets .row .col-md-3 {
-    height: auto;
     border: solid 2px #cecece;
+    height: auto;
     width: 27.5%;
 }
 
@@ -391,88 +273,66 @@ tr td:first-child {
 
 .tickets h4 {
     color: #000;
-    font-size: 34px;
-    font-family: "Sanchez",sans-serif;
+    font: 34px "Sanchez",sans-serif;
     text-align: center;
 }
 
-.tickets p {
-    padding-top: 20px;
-}
+.tickets p {padding-top: 20px;}
 
 .tickets a {
-    display: inline-block;
     background-color: #2fb5a9;
     color: #FFF;
+    display: inline-block;
+    font: 30px "Sanchez",sans-serif;
     padding: 20px 40px;
     margin-left: 27%;
-    font-size: 30px;
-    font-family: "Sanchez",sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    width: 45.5%;
-    text-decoration: none;
     margin-top: 80px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 45.5%;
 }
 
-.tickets a:hover {
-    background-color: #383838;
-}
+.tickets a:hover {background-color: #383838;}
 
-/*Sponsors*/
-.patrocinadores {
-    background-color: #2b2a2a;
-}
+/*Patrocinadores*/
 
-.patrocinadores h2 {
-    color: #12edde;
-    font-size: 72px;
-    font-family: "Sanchez", sans-serif;
-    margin-bottom: 0;
-}
+.patrocinadores { background-color: #2b2a2a;}
 
-.patrocinadores h3 {
-    color: #FFF;
-    font-size: 30px;
-    font-family: "Sanchez", sans-serif;
-    font-weight: 100;
-    margin: 0 0 50px 0;
-}
+.patrocinadores h2 {color: #12edde;}
 
-.patrocinadores img {
-    width: 100%;
-}
+.patrocinadores h3 {color: #FFF;}
 
-.patrocinadores .col-md-2 {
-    padding-top: 40px;
-}
+.patrocinadores img {width: 100%;}
+
+.patrocinadores .col-md-2 {padding-top: 40px;}
+
 
 footer {
-    height: auto;
-    width: 100%;
     background-color: #181818;
-    padding: 20px 0 20px 0;
     color: #FFF;
-    font-size: 16px;
+    height: auto;
+    font: 16px "Roboto", sans-serif;
     font-weight: 400;
+    padding: 20px 0 20px 0;
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    width: 100%;
 }
 
 #mapa {
+    border: solid 1px #383838;
     display: block;
     height: 400px;
-    border: solid 1px #383838;
 }
 
 footer a {
-    text-decoration: none;
     color: #FFF;
+    text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: none;
     color: #FFF;
+    text-decoration: none;
 }
 
 @media (max-width: 990px) {
@@ -482,9 +342,7 @@ footer a:hover {
         margin: 0 auto;
     }
 
-    nav ul li {
-        text-align: center;
-    }
+    nav ul li {text-align: center;}
 
     .logo {
         display: block;
@@ -493,29 +351,25 @@ footer a:hover {
         padding-bottom: 60px;
     }
 
-    .action {
-        padding-bottom: 0;
-    }
+    .action {padding-bottom: 0;}
 
-    .intro div {
-        top: 0;
-    }
+    .intro div {top: 0;}
 
     .action img {
-        width: 70%;
         margin: 50px auto;
+        width: 70%;
     }
 
     .mentor {
-        padding: 20px;
-        width: 49.7%;
         display: inline-block;
+        padding: 20px;
         vertical-align: top;
+        width: 49.7%;
     }
 
     .juez {
-        width: 100%;
         padding: 5px 20px 20px 20px;
+        width: 100%;
     }
 
     #mapa {
@@ -524,13 +378,13 @@ footer a:hover {
     }
 
     .tickets .row .col-md-3 {
-        width: 96%;
         margin: 2%;
+        width: 96%;
     }
 
     .tickets a {
-        width: 100%;
         margin-left: 0;
+        width: 100%;
     }
 
     .patrocinadores .col-md-2 {
@@ -543,8 +397,8 @@ footer a:hover {
  
     
     .action img {
-        width: 100%;
         margin: 50px auto;
+        width: 100%;
     }
 
     nav ul {
@@ -554,26 +408,20 @@ footer a:hover {
     }
 
     nav ul li {
-        width: 100%;
         text-align: center;
         margin: 10px 0 10px 0;
-    }
-
-    .mentor {
         width: 100%;
     }
 
+    .mentor {width: 100%;}
+
     #mapa {
+        height: 230px;
         margin: 50px auto;
         width: 95%;
-        height: 230px;
     }
 
-    .patrocinadores h2 {
-        font-size: 42px;
-    }
+    .patrocinadores h2 {font-size: 42px;}
 
-    .patrocinadores h3 {
-        font-size: 22px;
-    }
+    .patrocinadores h3 {font-size: 22px;}
 }
