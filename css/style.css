@@ -400,9 +400,9 @@ footer a:hover {
 
 @media (max-width: 685px) {
  
-    .intro a{
-        width: 100%;
-    }
+    .intro{margin-bottom: 100px;}
+    
+    .intro a{width: 100%;}
     
     .action img {
         margin: 50px auto;
