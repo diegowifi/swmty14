@@ -47,7 +47,7 @@ $(document).ready(function () {
       });
     });
 
- $("#object").delay(2000).fadeIn(900).animate({top:"-=20px"},900).animate({top:"+=20px"},900).animate({top:"-=20px"},900)
+ $("#object").delay(2500).fadeIn(900).animate({top:"-=20px"},900).animate({top:"+=20px"},900).animate({top:"-=20px"},900)
 .animate({top:"+=20px"},900).animate({top:"-=20px"},900).animate({top:"+=20px"},900);
 
 });
