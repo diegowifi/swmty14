@@ -204,6 +204,7 @@ tr td:first-child {
 
 .mentor:hover {
     background-color: #383838;
+    border-radius: 5px;
     color: #FFF;
 }
 
@@ -229,7 +230,8 @@ tr td:first-child {
 .jueces h3 {color: #FFF;}
 
 .juez:hover {
-    background-color: #FFF;
+    background-color: #f4f4f4;
+    border-radius: 5px;
     color: #000;
 }
 
